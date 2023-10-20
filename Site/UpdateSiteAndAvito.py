@@ -21,9 +21,9 @@ headersSber = {
 }
 
 wcapi = API(
-    url="https://parfumlight.ru",
-    consumer_key="ck_a0c80b91327ff3740cdb6124dc68859e1bf46480",
-    consumer_secret="cs_ab2d81ce9112540343a325b6c6d61474bc18667d",
+    url="https://reginaparfum.ru",
+    consumer_key="ck_e1f86d878c9f23199f87c6c59db9a014c3046a0d",
+    consumer_secret="cs_105a48b97b242e976f5a0f039015d71e08f9e065",
     wp_api=True,
     version="wc/v2"
 )
@@ -324,12 +324,12 @@ def OzonToSite(inSite, inPost1,DICTCARD):
         for j in inPost1:
             if i[2].replace(" ", "") == j[0].replace(" ", ""):
                 print(str(i))
-                # UpdatePoductAPI(i[0],i[2],j[1],DICTCARD)
+                UpdatePoductAPI(i[0],i[2],j[1],DICTCARD)
                 allTovInSite.append(SetPoductAPI(i[1],i[3],i[2],DICTCARD))
                 isUpdate = True
                 break
         if not isUpdate:
-            # DeletePoductAPI(i[0])
+            DeletePoductAPI(i[0])
             deleteTovInSite.append(i[2])
         # break
 
@@ -440,8 +440,8 @@ def DeleteDubl(dubl):
         print(wcapi.delete("products/"+str(i[0]), params={"force": True}).json())
 
 def main():
-    filePost1 = "Парфюмерия 03.10.2023.xlsx"
-    filePost2 = "Отливанты 03.10.2023.xlsx"
+    filePost1 = "Парфюмерия 09.10.2023.xlsx"
+    filePost2 = "Отливанты 09.10.2023.xlsx"
     fileSite = "Товары на сайте.xlsx"
     inPost1 = GetTovarInSite1(filePost1)
     inPost2 = GetTovarInSite2(filePost2)
