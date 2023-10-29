@@ -3,9 +3,9 @@ import pandas as pd
 from woocommerce import API
 
 wcapi = API(
-    url="https://parfumlight.ru",
-    consumer_key="ck_a0c80b91327ff3740cdb6124dc68859e1bf46480",
-    consumer_secret="cs_ab2d81ce9112540343a325b6c6d61474bc18667d",
+    url="https://reginaparfum.ru",
+    consumer_key="ck_e1f86d878c9f23199f87c6c59db9a014c3046a0d",
+    consumer_secret="cs_105a48b97b242e976f5a0f039015d71e08f9e065",
     wp_api=True,
     version="wc/v2"
 )
