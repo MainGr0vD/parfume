@@ -5,9 +5,9 @@ import re
 
 def GetAPIConnect():
     wcapi = API(
-        url="https://t.parfumelight.ru",
-        consumer_key="ck_e9a9cd7d5bec35dd781de2ca343bb549bbfb38c3",
-        consumer_secret="cs_0400759a72f786596bb9fe97ab6546239d54f9c1",
+        url="https://reginaparfum.ru",
+        consumer_key="ck_e1f86d878c9f23199f87c6c59db9a014c3046a0d",
+        consumer_secret="cs_105a48b97b242e976f5a0f039015d71e08f9e065",
 
         # url="http://roma28.beget.tech",
         # consumer_key="ck_aa7763a2a2b844b03fdd67a3aa752812922ac5ab",
